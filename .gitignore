@@ -59,4 +59,5 @@ typings/
 
 # visual studion code
 .vscode/
+token.js
 
