@@ -36,6 +36,8 @@
     "mongoose": "4.10.8",
     "morgan": "^1.8.2",
     "nodemon": "^1.11.0",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

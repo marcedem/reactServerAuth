@@ -4,7 +4,7 @@ const User = require('../models/user');
 
 function tokenForUser(user){
     const timeStamp = new Date().getTime();
-    // sub stands for subject. iat: issued at time
+    // sub stands for subject. iat: issued at time (this also stand for the token payload, that will be used in passport.js)
     return jwt.encode({sub: user.id, iat: timeStamp}, token.secret);
 }
 
