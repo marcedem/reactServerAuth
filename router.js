@@ -10,7 +10,7 @@ const requireSignin = passport.authenticate('local', { session: false });
 module.exports = function(app){
     //app.get('/', Authentication.allposts);
     app.get('/', requireAuth, function(req, res){
-        res.send({hi: 'there' })
+        res.send({message: 'Welcome to the dummy server world!' })
     });
     
      app.post('/signin', requireSignin, Authentication.signin);

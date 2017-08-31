@@ -8,6 +8,7 @@ const app = express();
 const router = require('./router');
 const config = require('./config');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 // DB Setup
  mongoose.connect(config.getDbConnectionString(), function(error){
@@ -17,6 +18,7 @@ const mongoose = require('mongoose');
 
 // App Setup
 app.use(morgan('combined'));
+app.use(cors());
 app.use(bodyParser.json({type: '*/*'}));
 router(app);
 
